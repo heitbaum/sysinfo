@@ -53,7 +53,7 @@ where
     not(feature = "unknown-ci"),
     not(feature = "apple-sandbox")
 ))]
-pub(crate) fn into_iter<T>(val: T) -> T::IntoIter
+pub fn into_iter<T>(val: T) -> T::IntoIter
 where
     T: IntoIterator,
 {
